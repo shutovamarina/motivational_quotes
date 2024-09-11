@@ -1,0 +1,63 @@
+body {
+    background-image: url(main_picture.webp);
+    font-family: 'Arial', sans-serif;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    text-align: center;
+    margin-top: 250px;
+}
+
+.site-title {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 30px;
+    font-family: 'Georgia', serif;
+}
+
+.btn {
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #6ba583;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quote-btn:hover {
+    background-color: #4f8562;
+}
+
+.par {
+    display: none;
+    font-size: 24px;
+    color: #fff;
+    background-color: rgba(107, 165, 131, 0.8);
+    /* полупрозрачный фон, аналогичный цвету кнопки */
+    padding: 20px;
+    margin: 30px;
+    border-radius: 10px;
+    /* закругленные углы, аналогичные кнопке */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* легкая тень для объема */
+    transition: opacity 0.3s ease;
+    /* плавное появление текста */
+    opacity: 0;
+}
+
+.par.show {
+    opacity: 1;
+}
